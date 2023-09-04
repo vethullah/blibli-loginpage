@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign In</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+      body{
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        font-family: 'Nunito Sans', sans-serif ;
+        }
+
+        .form-label {
+          font-weight: bold;
+        }
+
+        p {
+          margin-top: -9px;
+          color: rgb(151, 151, 151);
+        }
+
+        /* @media (max-width : 932px){
+          .display-none {
+            display: none !important;
+          }
+        } */
+
+        .textdec {
+          text-decoration: none;
+          color: dodgerblue;
+          
+        }
+
+        .textdec1 {
+          text-decoration: none;
+          color: dodgerblue;
+          font-size:14px;
+        }
+
+        .form-control {
+          height: 55px;        
+          border: none;
+          background-color: #f1f2f2ff;
+        }
+
+        a {
+          text-decoration: none;
+        }
+
+        svg {
+          fill: dodgerblue;
+          margin-right: 5px;
+          margin-bottom: 4px;
+        }
+
+        .form-label {
+          color: dodgerblue;
+        }
+
+        .facegoog {
+          margin-bottom: 4px;
+          margin-right: 3px;
+        }
+
+        .googface {
+          border: none;
+          height: 40px;
+        }
+
+        /* .btn {
+          height:50px;
+          width: 90px;
+        } */
+    </style>
+
+  </head>
+  <body class="shadow-sm m-5 p-5 bg-body-tertiary rounded-4 border">
+    
+    <div class="row m-0 h-100 w-100 mt-0">
+      <divc class="col p-0 d-flex justify-content-center align-items-center">
+        <img src="images/desktop-login.029808b5.svg" class="w-75 p-75">
+      </divc>
+
+      <div class="col p-0 d-flex justify-content-center align-items-center ">
+        <form class="w-75">
+        <h2 class="form-label text-center mb-5">Masuk ke Akunmu</h2>
+        <div class="rounded-4 border shadow-sm p-4 m-1">
+
+          <!-- form login -->
+          <!-- <div>
+          <div class="mb-3 ">
+            <input type="text" id="disabledTextInput" class="form-control" placeholder="Email/nomor hp">
+          </div>
+
+          <div class="mb-3">
+            <input type="text" id="disabledTextInput" class="form-control" placeholder="Kata sandi">
+          </div>
+          </div> -->
+
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div>
+
+          <!-- lupasandi highlight -->
+          <div class="mt-2">
+            <a href="#" class="textdec">lupa kata sandi?</a>
+          </div>
+          <!-- button login -->
+          <div class="text-center m-2">
+            <button type="submit" class="btn btn-primary p-2 ps-5 pe-5 rounded-5 ">Masuk</button>
+          </div>
+
+          <!-- more login method -->
+          <div class="textdec1 text-center d-flex justify-content-between mt-3">
+            
+            <div>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"><path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/></svg><span>Masuk dengan nomor HP</span>
+              </a>
+            </div>
+          
+            <div>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M24 13h-24v-3h24v3zm-14-5h1v-2h-2v1h1v1zm2-3h1v-1h-1v-1h-3v1h2v2h1v-1zm2 1h1v-5h-1v1h-1v-1h-4v1h3v1h2v3zm-1 1h1v-1h-1v1zm-10-1h3v-3h-3v3zm15 0h3v-3h-3v3zm-2 2v-7h7v7h-7zm1-1h5v-5h-5v5zm-2 1v-1h-1v1h1zm-3 0h1v-1h-1v1zm-11 0v-7h7v7h-7zm1-1h5v-5h-5v5zm11 13v1h1v-1h-1zm3-4h1v-1h-1v1zm2 3h2v1h-1v2h-1v1h-1v-1h-1v1h-1v-1h-1v-1h1v-2h-2v1h-3v1h1v1h-1v1h-1v-5h1v-1h2v-1h1v-1h1v1h2v1h-1v1h1v1h1v-1h1v1zm-1 1h-1v1h1v-1zm2-5v1h1v-1h-1zm2 0v1h1v-1h-1zm-3 2v-1h-1v1h1zm3 0v-1h-1v1h-1v1h1v1h1v-1h2v-2h-1v1h-1zm-9 6h1v-2h-1v2zm9-2v2h1v-1h1v-2h-1v1h-1zm-20-5h7v7h-7v-7zm1 6h5v-5h-5v5zm18 1v-1h-1v1h1zm-17-2h3v-3h-3v3zm19-1v-1h-1v1h1zm-13-5v2h1v-2h-1z"/></svg><span>Masuk dengan QR</span></a>     
+            </div>
+          
+          </div>
+          
+        </div>
+
+        <!-- facebook & google login -->
+        <div class="text-center justify-content-between mt-4">
+          <button class="rounded-3 w-25 me-2 shadow border-1 googface"><img src="images/facebook.png" width="26" height="26" class="facegoog">Facebook</button>
+          <button class="rounded-3 w-25 me-2 shadow border-1 googface"><img src="images/google.png" width="26" height="26" class="facegoog">Google</button>
+        </div> 
+        
+        <!-- daftar dulu -->
+        <div class="mt-4">
+        <p class="text-center">Tidak punya akun? <a href="#" class="textdec">Daftar</a></p>
+        </div>
+      
+      </div>
+      </form>  
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
